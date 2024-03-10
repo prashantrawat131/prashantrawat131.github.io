@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url("ultraRegular.tff") format("truetype");
+}
+
+body {
+  font-family: "CustomFont", serif;
+  margin: 2%;
+  background-color: whitesmoke;
+  color: black;
+}
+
+#photo-symbol {
+  margin: 0 auto;
+  /* Same line */
+  display: inline;
+  color: #49241c;
+  font-size: 40px;
+  position: relative;
+  animation: photo-anim 1s;
+}
+
+#name {
+  font-size: 40px;
+  color: #49241c;
+  display: inline;
+  position: relative;
+  animation: name-anim 1s;
+}
+
+/* Text coming from left like some bouncing animation */
+@keyframes name-anim {
+  0% {
+    left: 100px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes photo-anim {
+  0% {
+    left: -100px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+a {
+  color: #49241c;
+  text-decoration: none;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+/* Reset default list styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* one line */
+  display: flex;
+  flex-wrap: wrap;
+
+  width: wrap;
+}
+
+/* Style list items */
+li {
+  padding: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-left: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+  /* remove underline */
+  text-decoration: none;
+}
+
+/* Hover effect */
+li:hover {
+  background-color: #e0e0e0;
+}
+
+.thickline {
+  border-bottom: 2px solid black;
+}
+
+section {
+  padding: 25px;
+}
