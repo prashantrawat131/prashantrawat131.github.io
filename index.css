@@ -1,13 +1,51 @@
 @font-face {
   font-family: "CustomFont";
-  src: url("ultraRegular.tff") format("truetype");
+  src: url("/fonts/monsterrat.ttf") format("truetype");
 }
 
 body {
-  font-family: "CustomFont", serif;
+  font-family: "CustomFont";
   margin: 2%;
   background-color: whitesmoke;
   color: black;
+}
+
+#introduction {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 32px;
+  color: gray;
+}
+
+
+.link-item{
+  margin-top: 8px;
+  margin-right: 24px;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+}
+
+.links-section{
+  border: #e0e0e0 2px dashed;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+.links-section-heading{
+  font-size: 24px;
+  font-weight: bold;
+  padding: 8px;
+  margin-top: 0;
+}
+
+
+#name {
+  font-size: 40px;
+  color: #49241c;
+  display: inline;
+  position: relative;
+  animation: name-anim 1s;
 }
 
 #photo-symbol {
@@ -18,14 +56,6 @@ body {
   font-size: 40px;
   position: relative;
   animation: photo-anim 1s;
-}
-
-#name {
-  font-size: 40px;
-  color: #49241c;
-  display: inline;
-  position: relative;
-  animation: name-anim 1s;
 }
 
 /* Text coming from left like some bouncing animation */
