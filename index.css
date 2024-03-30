@@ -15,30 +15,40 @@ body {
   margin-bottom: 20px;
   line-height: 32px;
   color: gray;
+  white-space: pre-line;
 }
 
+.link-description {
+  font-size: 16px;
+  line-height: 24px;
+}
 
-.link-item{
-  margin-top: 8px;
-  margin-right: 24px;
-  padding: 8px;
+.link-item {
+  width: 15%;
+  margin: 24px;
+  padding: 16px;
   border-radius: 8px;
   background-color: #f0f0f0;
 }
 
-.links-section{
+.link-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.links-section {
+  display: flex;
+  flex-wrap: wrap;
   border: #e0e0e0 2px dashed;
   border-radius: 8px;
-  margin-top: 24px;
 }
 
-.links-section-heading{
+.links-section-heading {
   font-size: 24px;
   font-weight: bold;
-  padding: 8px;
-  margin-top: 0;
+  margin-top: 48px;
 }
-
 
 #name {
   font-size: 40px;
